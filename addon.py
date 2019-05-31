@@ -9,7 +9,7 @@ def getCond(condition):
 def setting(id):
 	return xbmcaddon.Addon().getSetting(id)
 
-def property(key):
+def getProp(key):
 	return xbmcgui.Window(10000).getProperty(key)
 
 def execute(function):
@@ -18,7 +18,7 @@ def execute(function):
 	xbmc.executebuiltin(function)
 	if setting('unpause_onclose') == 'true':
 		xbmc.sleep(2000)
-		while property('infodialogs.active'):
+		while getProp('infodialogs.active'):
 			xbmc.sleep(2000)
 		if getCond('Player.Paused'):
 			xbmc.Player().pause()
