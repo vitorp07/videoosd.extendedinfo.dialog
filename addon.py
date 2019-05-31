@@ -3,14 +3,17 @@ import xbmcgui
 import xbmcaddon
 
 
+def getInfo(infotag):
+	return xbmc.getInfoLabel(infotag)
+
 def getCond(condition):
 	return xbmc.getCondVisibility(condition)
 
-def setting(id):
-	return xbmcaddon.Addon().getSetting(id)
-
 def getProp(key):
 	return xbmcgui.Window(10000).getProperty(key)
+
+def setting(id):
+	return xbmcaddon.Addon().getSetting(id)
 
 def execute(function):
 	if setting('pause_onclick') == 'true' and getCond('Player.Playing'):
@@ -32,7 +35,7 @@ def main():
 	if getCond('VideoPlayer.Content(movies)'):
 		dialog = '{}extendedinfo,imdb_id={},name={})'.format(base, info.getIMDBNumber(), info.getTitle())
 	elif getCond('VideoPlayer.Content(episodes)'):
-		if setting('episode_infodialog') == 'true' and int(xbmc.getInfoLabel('System.BuildVersion')[:2]) > 16:
+		if setting('episode_infodialog') == 'true' and int(getInfo('System.BuildVersion')[:2]) > 16:
 			dialog = '{}extendedepisodeinfo,tvshow={},season={},episode={})'.format(base, info.getTVShowTitle(), info.getSeason(), info.getEpisode())
 		else:
 			dialog = '{}extendedtvinfo,name={})'.format(base, info.getTVShowTitle())
