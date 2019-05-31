@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="videoosd.extendedinfo.dialog" name="ExtendedInfo Script - Open dialog(video osd)" version="1.0.1" provider-name="vitorp07">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.keymap" version="1.0.10"/>
+		<import addon="script.extendedinfo" version="4.5.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="kodi.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Launch ExtendedInfo dialog from video osd</summary>
+		<description lang="en">Launch ExtendedInfo dialog from video osd. Needs script.extendedinfo installed and activated</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<source>https://github.com/vitorp07/videoosd.extendedinfo.dialog</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
+			<screenshot></screenshot>
+			<screenshot></screenshot>
+			<screenshot></screenshot>
+		</assets>
+		<news>
+v.1.0.1
+ - Added settings to pause/unpause video when opening/closing info dialog
+ - Added setting to open episode info dialog instead of tv show(Kodi version 17 and up)
+ - Created language file for settings translations
+ - Add-on is now hosted on it's own repo at https://github.com/vitorp07/videoosd.extendedinfo.dialog
+		</news>
+	</extension>
+</addon>

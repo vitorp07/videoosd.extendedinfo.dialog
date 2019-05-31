@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <category label="128">
+        <setting id="pause_onclick" label="32000" type="bool" default="true"/>
+        <setting id="unpause_onclose" label="32001" type="bool" default="true" enable="eq(-1,true)"/>
+        <setting id="episode_infodialog" label="32002" type="bool" default="false"/>
+    </category>
+</settings>
