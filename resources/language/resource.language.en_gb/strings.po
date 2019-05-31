@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: videoosd.extendedinfo.dialog\n"
-"Report-Msgid-Bugs-To: https://github.com/vitorp07/tests-samples\n"
+"Report-Msgid-Bugs-To: https://github.com/vitorp07/videoosd.extendedinfo.dialog\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: vitorp07\n"
