@@ -3,7 +3,7 @@ Kodi add-on that adds the ability to bind a remote or keyboard key to launch Ext
 Assigning a button to launch this add-on will have the same effect as binding a key.
 
 If the add-on is launched and a video is currently playing;
-It will pass the info for ExtendedInfo Script to launch the appropriate info dialog.
+It will pass the info for ExtendedInfo Script to open the appropriate info dialog.
 
 If the add-on is launched and no video is currently playing or if selected via Program Add-ons;
-The add-on's setting dialog will open.
+The add-on's settings dialog will open.
