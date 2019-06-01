@@ -1,6 +1,6 @@
 # videoosd.extendedinfo.dialog
 Kodi add-on that adds the ability to bind a remote or keyboard key to launch ExtendedInfo Script dialog from the video osd.
-Assigning a button to launch this add-on will have the same effect as binding a key.
+Assigning a button in the skins to launch this add-on will have the same effect as binding a key.
 
 If the add-on is launched and a video is currently playing;
 It will pass the info for ExtendedInfo Script to open the appropriate info dialog.
